@@ -16,4 +16,4 @@ To train the feature extractor : \
 ```train.py``` : with arguments ```--traindir``` (the same as above), ```--device``` the device to train on, and others concerning training and data augmentation hyperparameters that can be found in ```args.py``` with default values that we used.
 
 To validate the learned feature extractor using 5-shots :\
-```evaluate.py``` : with arguments ```--traindir``` for the folder containing the validation datasets, and others concerning hyperparameters that can also be found in ```args.py```.
+```evaluate.py``` : with arguments ```--valdir``` for the folder containing the validation datasets, and others concerning hyperparameters that can also be found in ```args.py```.
