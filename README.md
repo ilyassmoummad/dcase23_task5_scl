@@ -18,10 +18,10 @@ To train the feature extractor :\
 To validate the learned feature extractor using 5-shots :\
 ```evaluate.py``` : with arguments ```--valdir``` for the folder containing the validation datasets, and others concerning hyperparameters that can also be found in ```args.py```.
 For submission 1 :\
-```--ft 0 --ftlr 0.01 --ftepochs 20 --method ce --adam```
+```--ft 0 --ftlr 0.01 --ftepochs 20 --method ce --adam```\
 For submission 2 :\
-```--ft 1 --ftlr 0.001 --ftepochs 40 --method ce --adam```
+```--ft 1 --ftlr 0.001 --ftepochs 40 --method ce --adam```\
 For submission 3 :\
-```--ft 2 --ftlr 0.001 --ftepochs 40 --method ce --adam```
+```--ft 2 --ftlr 0.001 --ftepochs 40 --method ce --adam```\
 For submission 4 :\
 ```--ft 3 --ftlr 0.001 --ftepochs 40 --method ce --adam```
