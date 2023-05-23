@@ -12,8 +12,16 @@ Our approach consists in :
 Firstly, we create the spectrograms of the training set :\
 ```create_train.py``` : with argument ```--traindir``` for the folder containing the training datasets.
 
-To train the feature extractor : \
+To train the feature extractor :\
 ```train.py``` : with arguments ```--traindir``` (the same as above), ```--device``` the device to train on, and others concerning training and data augmentation hyperparameters that can be found in ```args.py``` with default values that we used.
 
 To validate the learned feature extractor using 5-shots :\
 ```evaluate.py``` : with arguments ```--valdir``` for the folder containing the validation datasets, and others concerning hyperparameters that can also be found in ```args.py```.
+For submission 1 :\
+```--ft 0 --ftlr 0.01 --ftepochs 20 --method ce --adam```
+For submission 2 :\
+```--ft 1 --ftlr 0.001 --ftepochs 40 --method ce --adam```
+For submission 3 :\
+```--ft 2 --ftlr 0.001 --ftepochs 40 --method ce --adam```
+For submission 4 :\
+```--ft 3 --ftlr 0.001 --ftepochs 40 --method ce --adam```
