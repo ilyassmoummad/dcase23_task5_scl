@@ -25,3 +25,6 @@ For submission 3 :\
 ```--ft 2 --ftlr 0.001 --ftepochs 40 --method ce --adam```\
 For submission 4 :\
 ```--ft 3 --ftlr 0.001 --ftepochs 40 --method ce --adam```
+
+To get the scores :\
+```evaluation_metrics/evaluate.py``` : with arguments ```-pred_file``` for the predictions csv file created by ```evaluate.py```, ```-ref_files``` for the path of validation datasets, and ```-save_path``` for the folder to save the scores json file
