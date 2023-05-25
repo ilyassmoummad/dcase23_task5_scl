@@ -12,7 +12,7 @@ from util import finetune_ce
 import glob
 import os
 import pickle
-from augmentations import RandomCrop, Resize, Compander
+from da import RandomCrop, Resize, Compander
 from args import args
 if args.wandb:
     import wandb

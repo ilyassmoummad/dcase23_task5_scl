@@ -2,7 +2,7 @@ import torch
 from torch import nn
 from tqdm import tqdm
 from losses import SupConLoss
-from augmentations import RandomCrop, Resize, Compander, GaussNoise, FreqShift, MixRandom
+from da import RandomCrop, Resize, Compander, GaussNoise, FreqShift, MixRandom
 from models import ResNet
 from torchinfo import summary
 from args import args
