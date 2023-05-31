@@ -9,14 +9,14 @@ def finetune_ce(encoder, train_loader, transform,  args):
     loss_fn = torch.nn.CrossEntropyLoss()
     
     non_trainable_parameters = []
-    if args.ft >= 1 :
-        for param in encoder.layer3.parameters():
+    if args.ft <= 2 :
+        for param in encoder.layer1.parameters():
             non_trainable_parameters.append(param)
-        if args.ft >= 2:
+        if args.ft <= 1:
             for param in encoder.layer2.parameters():
                 non_trainable_parameters.append(param)
-            if args.ft >= 3:
-                for param in encoder.layer1.parameters():
+            if args.ft <= 0:
+                for param in encoder.layer3.parameters():
                     non_trainable_parameters.append(param)
 
     trainable_parameters = list( set(encoder.parameters()) - set(non_trainable_parameters) )
