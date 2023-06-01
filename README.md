@@ -1,4 +1,5 @@
 # Supervised Contrastive Learning for Pre-Training Bioacoustic Few-Shot Systems
+Autors : Ilyass Moummad, Romain Serizel, Nicolas Farrugia
 ---
 
 This is the implementation of our work for the challenge DCASE 2023 task 5
