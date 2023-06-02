@@ -31,7 +31,7 @@ For submission 4 :\
 To get the scores :\
 ```evaluation_metrics/evaluate.py``` : with arguments ```-pred_file``` for the predictions csv file created by ```evaluate.py```, ```-ref_files``` for the path of validation datasets, and ```-save_path``` for the folder to save the scores json file
 
-To cite this work :\
+To cite this work :
 ```
 @techreport{Moummad2023,
     Author = "Moummad, Ilyass and Serizel, Romain and Farrugia, Nicolas",
