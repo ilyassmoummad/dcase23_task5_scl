@@ -14,7 +14,8 @@ Firstly, we create the spectrograms of the training set :\
 ```create_train.py``` : with argument ```--traindir``` for the folder containing the training datasets.
 
 To train the feature extractor :\
-```train.py``` : with arguments ```--traindir``` (the same as above), ```--device``` the device to train on, and others concerning training and data augmentation hyperparameters that can be found in ```args.py``` with default values that we used.
+```train.py``` : with arguments ```--traindir``` (the same as above), ```--device``` the device to train on, and others concerning training and data augmentation hyperparameters that can be found in ```args.py``` with default values that we used.\
+Train checkpoint used for the submission can be download from this link : https://drive.google.com/file/d/1ANO4oEhZ_EJvNBHz4rCE939MX08codBm/view?usp=sharing
 
 To validate the learned feature extractor using 5-shots :\
 ```evaluate.py``` : with arguments ```--valdir``` for the folder containing the validation datasets, and others concerning hyperparameters that can also be found in ```args.py```. Add :\
