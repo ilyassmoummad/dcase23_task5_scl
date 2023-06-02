@@ -30,3 +30,15 @@ For submission 4 :\
 
 To get the scores :\
 ```evaluation_metrics/evaluate.py``` : with arguments ```-pred_file``` for the predictions csv file created by ```evaluate.py```, ```-ref_files``` for the path of validation datasets, and ```-save_path``` for the folder to save the scores json file
+
+To cite this work :\
+```
+@techreport{Moummad2023,
+    Author = "Moummad, Ilyass and Serizel, Romain and Farrugia, Nicolas",
+    title = "SUPERVISED CONTRASTIVE LEARNING FOR PRE-TRAINING BIOACOUSTIC FEW SHOT SYSTEMS",
+    institution = "DCASE2023 Challenge",
+    year = "2023",
+    month = "June",
+    abstract = "We show in this work that learning a rich feature extractor from scratch using only official training data is feasible. We achieve this by learning representations using a supervised contrastive learning framework. We then transfer the learned feature extractor to the sets of validation and test for few-shot evaluation. For fewshot validation, we simply train a linear classifier on the negative and positive shots and obtain a F-score of 63.46\% outperforming the baseline by a large margin. We don’t use any external data or pretrained model. Our approach doesn’t require choosing a threshold for prediction or any post-processing technique"
+}
+```
