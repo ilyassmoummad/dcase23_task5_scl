@@ -129,7 +129,6 @@ def compute_scores_from_counts(counts):
 
 
 def build_report(main_set_scores, scores_per_miniset, scores_per_audiofile, save_path, main_set_name="EVAL", team_name="test_team" , **kwargs):
-    
 
     # datetime object containing current date and time
     now = datetime.now()
@@ -148,7 +147,8 @@ def build_report(main_set_scores, scores_per_miniset, scores_per_audiofile, save
     if "scores_per_class" in kwargs.keys():
         report["scores_per_class"] = kwargs['scores_per_class']
 
-    with open(os.path.join(save_path,"Evaluation_report_" + team_name + "_" + main_set_name + '_' + date_string + '.json'), 'w') as outfile:
+    #with open(os.path.join(save_path,"Evaluation_report_" + team_name + "_" + main_set_name + '_' + date_string + '.json'), 'w') as outfile:
+    with open(os.path.join(save_path,"Evaluation_report.json"), 'w') as outfile:
         json.dump(report, outfile)
 
     return

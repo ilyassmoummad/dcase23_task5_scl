@@ -50,7 +50,7 @@ class BasicBlock(nn.Module):
 
 class ResNet(nn.Module):
 
-    def __init__(self, method, block=BasicBlock, keep_prob=1.0, avg_pool=True, drop_rate=0.1, dropblock_size=5, num_classes=46):
+    def __init__(self, method, block=BasicBlock, avg_pool=True, num_classes=46):
         self.inplanes = 1
         super(ResNet, self).__init__()
 
@@ -60,10 +60,7 @@ class ResNet(nn.Module):
 
         if avg_pool:
             self.avgpool = nn.AvgPool2d(5, stride=1)
-        self.keep_prob = keep_prob
         self.keep_avg_pool = avg_pool
-        self.dropout = nn.Dropout(p=1 - self.keep_prob, inplace=False)
-        self.drop_rate = drop_rate
 
         self.pool = nn.AdaptiveMaxPool2d((8, 1))
         if method in ['scl', 'ssl']:
@@ -78,7 +75,7 @@ class ResNet(nn.Module):
                 nn.init.constant_(m.weight, 1)
                 nn.init.constant_(m.bias, 0)
 
-    def _make_layer(self, block, planes, stride=1, drop_rate=0.0, drop_block=False, block_size=1):
+    def _make_layer(self, block, planes, stride=1):
         downsample = None
         if stride != 1 or self.inplanes != planes * block.expansion:
             downsample = nn.Sequential(
@@ -88,7 +85,7 @@ class ResNet(nn.Module):
             )
 
         layers = []
-        layers.append(block(self.inplanes, planes, stride, downsample, drop_rate, drop_block, block_size))
+        layers.append(block(self.inplanes, planes, stride, downsample))
         self.inplanes = planes * block.expansion
 
         return nn.Sequential(*layers)

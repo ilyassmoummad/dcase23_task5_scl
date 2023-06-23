@@ -19,7 +19,9 @@ if args.wandb:
 
 # General params
 val_dir = args.valdir
-csv_path = os.path.join(args.traindir, '../outputs/eval.csv')
+out_dir = os.path.join(args.traindir, '../../outputs')
+os.makedirs(out_dir, exist_ok=True)
+csv_path = os.path.join(out_dir, 'eval.csv')
 ckpt_dir = os.path.join(args.traindir, '../model/')
 TARGET_SR = args.sr
 N_MELS = args.nmels

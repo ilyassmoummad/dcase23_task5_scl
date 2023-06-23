@@ -82,7 +82,7 @@ if __name__ == "__main__":
     awgn = GaussNoise(stdev_gen=args.noise, device=args.device)
     comp = Compander(comp_alpha=args.comp)
     mix = MixRandom(device=args.device)
-    fshift = FreqShift(Fshift=args.fshift, device=args.device)
+    fshift = FreqShift(Fshift=args.fshift)
 
     # Prepare views
     transform1 = nn.Sequential(mix, fshift, rc, resize, comp, awgn) # only one branch has mixing with a background sound

@@ -39,8 +39,8 @@ parser.add_argument("--len", type=int, default=200) #segment duration for traini
 
 # mel spec parameters
 parser.add_argument("--nmels", type=int, default=128) #number of mels
-parser.add_argument("--nfft", type=int, default=1024) #size of FFT
-parser.add_argument("--hoplen", type=int, default=256) #hop between STFT windows
+parser.add_argument("--nfft", type=int, default=512) #size of FFT
+parser.add_argument("--hoplen", type=int, default=128) #hop between STFT windows
 parser.add_argument("--fmax", type=int, default=11025) #fmax
 parser.add_argument("--fmin", type=int, default=50) #fmin
 
