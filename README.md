@@ -2,7 +2,7 @@
 Authors : Ilyass Moummad, Romain Serizel, Nicolas Farrugia
 ---
 
-This is the implementation of our submission work for the challenge DCASE 2023 task 5.\
+This is the implementation of our [submission](https://dcase.community/documents/challenge2023/technical_reports/DCASE2023_Moummad_IMT_t5.pdf) for the challenge DCASE 2023 task 5.\
 Our system ranked 2nd in the challenge. For more informations about the challenge results, [click here](https://dcase.community/challenge2023/task-few-shot-bioacoustic-event-detection-results) 
 
 Our approach consists in :
