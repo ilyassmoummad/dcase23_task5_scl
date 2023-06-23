@@ -3,7 +3,7 @@ Authors : Ilyass Moummad, Romain Serizel, Nicolas Farrugia
 ---
 
 This is the implementation of our submission work for the challenge DCASE 2023 task 5.\
-Our system rank 2nd in the challenge. For more informations about the challenge results, [click here]: (https://dcase.community/challenge2023/task-few-shot-bioacoustic-event-detection-results)
+Our system ranked 2nd in the challenge. For more informations about the challenge results, [click here](https://dcase.community/challenge2023/task-few-shot-bioacoustic-event-detection-results) 
 
 Our approach consists in :
 <ul>
@@ -29,7 +29,7 @@ For submission 4 :\
 ```--ft 3 --ftlr 0.001 --ftepochs 40 --method ce --adam```
 
 To get the scores :\
-```evaluation_metrics/evaluation.py``` : with arguments ```-pred_file``` for the predictions csv file created by ```evaluate.py``` (by default : traindir/../../outputs/eval.csv'), ```-ref_files``` for the path of validation datasets, and ```-save_path``` for the folder where to save the scores json file
+```evaluation_metrics/evaluation.py``` : with arguments ```-pred_file``` for the predictions csv file created by ```evaluate.py``` (the file is in : traindir/../../outputs/eval.csv'), ```-ref_files``` for the path of validation datasets, and ```-save_path``` for the folder where to save the scores json file
 
 To cite this work :
 ```
