@@ -69,9 +69,9 @@ for filename in filenames:
     """
     max_len = int(round(np.mean(difference)))
 
-    if max_len <= 17:
-        win_len = 17
-    elif max_len > 17 and max_len <= 100 :
+    if max_len <= 34:
+        win_len = 34
+    elif max_len > 34 and max_len <= 100 :
         win_len = max_len
     elif max_len > 100 and max_len <= 200 :
         win_len = max_len//2
