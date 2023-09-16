@@ -3,6 +3,7 @@ Authors : Ilyass Moummad, Romain Serizel, Nicolas Farrugia
 ---
 
 This is the implementation of our [submission](https://dcase.community/documents/challenge2023/technical_reports/DCASE2023_Moummad_IMT_t5.pdf) for the challenge DCASE 2023 task 5.\
+We invite you to take a look at the [workshop paper version](https://dcase.community/documents/workshop2023/proceedings/DCASE2023Workshop_Moummad_63.pdf) for more details and ablation studies.\
 Our system ranked 2nd in the challenge. For more informations about the challenge results, [click here](https://dcase.community/challenge2023/task-few-shot-bioacoustic-event-detection-results) 
 
 Our approach consists in :
@@ -31,7 +32,7 @@ For submission 4 :\
 To get the scores :\
 ```evaluation_metrics/evaluation.py``` : with arguments ```-pred_file``` for the predictions csv file created by ```evaluate.py``` (the file is in : traindir/../../outputs/eval.csv'), ```-ref_files``` for the path of validation datasets, and ```-save_path``` for the folder where to save the scores json file
 
-To cite this work :
+To cite the challenge report :
 ```
 @techreport{Moummad2023,
     Author = "Moummad, Ilyass and Serizel, Romain and Farrugia, Nicolas",
@@ -39,6 +40,18 @@ To cite this work :
     institution = "DCASE2023 Challenge",
     year = "2023",
     month = "June",
-    abstract = "We show in this work that learning a rich feature extractor from scratch using only official training data is feasible. We achieve this by learning representations using a supervised contrastive learning framework. We then transfer the learned feature extractor to the sets of validation and test for few-shot evaluation. For fewshot validation, we simply train a linear classifier on the negative and positive shots and obtain a F-score of 63.46\% outperforming the baseline by a large margin. We don’t use any external data or pretrained model. Our approach doesn’t require choosing a threshold for prediction or any post-processing technique"
+```
+
+Or to cite the workshop paper version :
+```
+@inproceedings{moummad,
+    author = "Moummad, Ilyass and Serizel, Romain and Farrugia, Nicolas",
+    title = "Pretraining Representations for Bioacoustic Few-Shot Detection Using Supervised Contrastive Learning",
+    booktitle = "Proceedings of the 8th Detection and Classification of Acoustic Scenes and Events 2023 Workshop (DCASE2023)",
+    address = "Tampere, Finland",
+    month = "September",
+    year = "2023",
+    pages = "136--140",
 }
 ```
+O
