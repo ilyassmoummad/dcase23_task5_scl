@@ -32,6 +32,13 @@ For submission 4 :\
 To get the scores :\
 ```evaluation_metrics/evaluation.py``` : with arguments ```-pred_file``` for the predictions csv file created by ```evaluate.py``` (the file is in : traindir/../../outputs/eval.csv'), ```-ref_files``` for the path of validation datasets, and ```-save_path``` for the folder where to save the scores json file
 
+---
+
+Credits :\
+We are thankful for the challenge baseline github that helped us make this repository : https://github.com/ilyassmoummad/dcase-few-shot-bioacoustic/tree/main
+
+---
+
 To cite the challenge report :
 ```
 @techreport{Moummad2023,
