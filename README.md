@@ -34,12 +34,12 @@ To get the scores :\
 
 ---
 
-Credits :\
-We are thankful for the challenge baseline github that helped us make this repository : https://github.com/ilyassmoummad/dcase-few-shot-bioacoustic/tree/main
+### Credits :\
+We are thankful for the challenge baseline code that helped us make this repository : https://github.com/ilyassmoummad/dcase-few-shot-bioacoustic/tree/main
 
 ---
 
-To cite the challenge report :
+### To cite the challenge report :
 ```
 @techreport{Moummad2023,
     Author = "Moummad, Ilyass and Serizel, Romain and Farrugia, Nicolas",
@@ -49,7 +49,7 @@ To cite the challenge report :
     month = "June",
 ```
 
-Or to cite the workshop paper version :
+### Or to cite the workshop paper version :
 ```
 @inproceedings{moummad,
     author = "Moummad, Ilyass and Serizel, Romain and Farrugia, Nicolas",
