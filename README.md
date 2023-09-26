@@ -32,6 +32,8 @@ For submission 4 :\
 To get the scores :\
 ```evaluation_metrics/evaluation.py``` : with arguments ```-pred_file``` for the predictions csv file created by ```evaluate.py``` (the file is in : traindir/../../outputs/eval.csv'), ```-ref_files``` for the path of validation datasets, and ```-save_path``` for the folder where to save the scores json file
 
+If you any question or a problem with the code/results do not hesitate to mail me on : ilyass.moummad@imt-atlantique.fr or open an issue on this repository, I am very responsive.
+
 ---
 
 ### Credits
