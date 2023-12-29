@@ -4,7 +4,7 @@ Authors: Ilyass Moummad, Romain Serizel, Nicolas Farrugia
 
 This is the implementation of our [submission](https://dcase.community/documents/challenge2023/technical_reports/DCASE2023_Moummad_IMT_t5.pdf) for the challenge DCASE 2023 task 5.\
 We invite you to take a look at the [workshop paper version](https://dcase.community/documents/workshop2023/proceedings/DCASE2023Workshop_Moummad_63.pdf) for more details and ablation studies.\
-Our system ranked 2nd in the challenge. For more informations about the challenge results, [click here](https://dcase.community/challenge2023/task-few-shot-bioacoustic-event-detection-results) 
+We ranked 2nd in the challenge. For more informations about the challenge results, [click here](https://dcase.community/challenge2023/task-few-shot-bioacoustic-event-detection-results) 
 
 Our approach consists in :
 <ul>
@@ -38,7 +38,8 @@ If you any question or a problem with the code/results do not hesitate to mail m
 
 ### Credits
 We are thankful for the challenge baseline code that helped us make this repository : https://github.com/ilyassmoummad/dcase-few-shot-bioacoustic/tree/main
-
+### Bonus
+Take a look at our newer work accepted at ICASSP 2024 where we improve the pre-training loss as well as the inference strategy (which is more stable) : https://github.com/ilyassmoummad/RCL_FS_BSED
 ---
 
 ### To cite the challenge report
