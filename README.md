@@ -38,8 +38,10 @@ If you any question or a problem with the code/results do not hesitate to mail m
 
 ### Credits
 We are thankful for the challenge baseline code that helped us make this repository : https://github.com/ilyassmoummad/dcase-few-shot-bioacoustic/tree/main
+
 ### Bonus
 Take a look at our newer work accepted at ICASSP 2024 where we improve the pre-training loss as well as the inference strategy (which is more stable) : https://github.com/ilyassmoummad/RCL_FS_BSED
+
 ---
 
 ### To cite the challenge report
