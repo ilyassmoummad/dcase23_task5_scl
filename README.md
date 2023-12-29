@@ -52,6 +52,7 @@ Take a look at our newer work accepted at ICASSP 2024 where we improve the pre-t
     institution = "DCASE2023 Challenge",
     year = "2023",
     month = "June",
+}
 ```
 
 ### Or to cite the workshop paper version
