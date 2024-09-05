@@ -12,6 +12,8 @@ Our approach consists in :
 <li>Training a linear classifier on each audio of the validation set</li>
 </ul>
 
+Dataset to be downloaded from this link: [DCASE 2023 TASK5 Dataset](https://dcase.community/challenge2024/task-few-shot-bioacoustic-event-detection)
+
 Firstly, we create the spectrograms of the training set :\
 ```create_train.py``` : with argument ```--traindir``` for the folder containing the training datasets.
 
